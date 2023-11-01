@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="navBar.css" rel="stylesheet" type="text/css">
+    <link href="videoDetails.css" rel="stylesheet">
+    <link href="mQuery.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+    <script src="yT.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <div class="icon"><img src="assets/img/icons.svg"></div>
+            <div class="logo"><img src="assets/img/Logo.svg"></div>
+        </div>
+        <div class="middle">
+            <div class="input"><input type="search" id="searchitem" placeholder="search"></div>
+            <div class="icon"><img onclick="searchstring()" src="assets/img/SearchBox-Button.svg">
+            <img src="assets/img/speech.svg"></div>
+        </div>
+        <div class="right">
+            <div class="icon"><img src="assets/img/Create.svg"></div>
+            <div class="icon"><img src="assets/img/Apps.svg"></div>
+            <div class="icon"><img src="assets/img/Notifications.svg"></div>
+            <div class="icon"><img src="assets/img/Profile.svg"></div>
+        </div>
+    </nav>
+<div class="main-container">
+    <div class="leftbox"><iframe id="ytvideo" width="800" height="500" src="" fullscreen="true">
+       </iframe>
+       <div id="description"> 
+       
+        </div>
+
+       <div class="yourcomment">
+        <img src="assets/img/Profile.svg">
+        <input type="text" placeholder="Add a comment...">
+       </div>
+        <div id="comments">  
+        </div>
+    </div>
+    <div class="rightbox">
+    <div class="All">
+        <a href="">All</a>
+        <a href="">From Marcus Levin</a>
+        
+    </div>
+    <div id="video-container">
+        <div class="video-info" onclick="openVideoDeatils('${video.id}')">
+            <div class="video-img">
+                <img src="${video.snippet.thumbnails.high.url}" alt="video title">
+            </div>
+            <div class="video-desc">
+                <div class="channel-avtar">
+                    <img src="assets/img/channel.png" alt="channelavtar">
+                </div>
+                <div class="channel-desc">
+                <div class="video-title">${video.snippet.localized.title}</div>
+                    <div class="channel-name">${video.snippet.channelTitle}</div>
+                   <div class="viewndtime"> <span>${video.statistics.viewCount} views</span>
+                    <span>1 week ago</span>
+                </div></div>
+            </div>
+           </div>
+    </div>
+     </div>
+</div>
+ 
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@media screen and (max-width:1000px) {
+    .middle input{width:400px;}
+    }
+
+    @media screen and (max-width:768px) {
+       .middle input{ width:50%;}
+
+       .sidebar{
+        display: none;
+
+       }
+       main{
+        padding-left:0px;
+       }
+      #video-container{
+         padding:0px;
+      }
+       .top-banner{ padding:0px;}
+       .box{ align-items: center;}
+    }
+  

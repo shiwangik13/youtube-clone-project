@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    background-color: #212121;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+
+input:focus{
+    border: none;
+    outline: none;
+}
+div{
+    color: white;
+}
+
+/* nav-bar designing */
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.middle-section{
+    /* flex: 0.5; */
+    width: 500px;
+    height: 40px;
+    /* align-items: center; */
+    display: flex;
+    gap: 5px;
+}
+.search-box{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    /* border: none; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.search-box input{
+    border: none;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    font-size: 1rem;
+}
+.search-box button{
+    border: none;
+    background-color: #303030;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* aside bar designing */
+
+aside{
+    /* border: 2px solid red; */
+     width:20%;
+     height: 100vh;
+     position: fixed;
+     top:0;
+     padding-top:66px;
+     padding-left: 1%;
+     background-color:var(--background-color);
+     /* overflow: scroll; */
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    padding:4px 0px;
+}
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+}
+.box-2{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-links{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 20px;
+    padding: 5px;
+    /* margin: 5px; */
+}
+.box-3 h4{
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight:600;
+}
+
+/* MAIN SECTION DESIGNING */
+main{
+    padding-left: 20%;
+}
+
+
+/* TOP-BANNER-ICONS-BUTTON STYLING */
+.top-banner-icons{
+    /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        margin-left: 20px;
+        padding-left:20px;
+        margin-bottom: 10px;
+        overflow: hidden;
+}
+.top-banner-icons-btn{
+    padding:7px;
+    display: flex;
+    white-space: nowrap;
+    height:19px;
+    align-items: center;
+    justify-content: center;
+     border-radius: 15px;
+     border:1px solid grey;
+   color:white;
+  width:auto;
+  font-size:14px;
+  font-weight: 500;
+   text-decoration: none;
+}
+
+#videos-container{
+    background-color:#0f0f0f;
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:10px;
+    color:white;
+}
+
+.clickbait-thumbnail{
+     width: 357px;
+    height: 300px;
+    border-radius:6px;
+    width: 160px;
+    height: 120px;
+}
+
+.video-description{
+    width: 357px;
+    display: flex;
+    gap:5px;
+}
+.video-info{
+    display: flex;
+    flex-direction: column; 
+    gap:10px;
+}
+
+.video-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.channel-avtar img{
+    height: 36px;
+}
+.channel-description{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.channel-name{
+    display: flex;
+    gap:5px;
+    font-size:12px;
+}

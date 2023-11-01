@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root{
+    --background-color:#0f0f0f;
+}
+html {
+    font-family: "Inter",sans-serif;
+}
+
+body{color:white;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: var(--background-color);
+}
+
+.main-container{
+display: flex;
+flex-direction:row;
+justify-content: center;
+gap:15px;
+margin-top: 20px;
+
+}
+.leftbox{
+display: flex;
+flex-direction: column;
+}
+.rightbox{
+ width:400px;
+display: flex;
+flex-direction: column;
+}
+.All{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    justify-content: flex-start;
+    margin-left:8px;
+    margin-bottom:7px;
+}
+.All a{font-size: 14px;
+    border:1px solid grey;
+    background-color: rgb(59, 59, 59);
+    border-radius: 8px;
+    padding:4px;
+    text-decoration: none;
+    color:white;
+}
+
+#video-container{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    padding:10px;
+    color:white;
+}
+#ytvideo{
+    border-radius: 3px;
+    border:none;
+}
+.video-img img{ width: 160px;
+    height: 120px;
+}
+
+.video-desc{
+    height: 20px;
+    display: flex;
+}
+.viewndtime ,.channel-name{
+    display: flex;
+    gap:5px;
+    font-size:12px;
+}
+p{
+    margin:0px;
+}
+.video-info{
+    display: flex;
+    flex-direction: row; 
+    gap:10px;}
+
+.video-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.channel-avtar{
+    display: none;
+}
+.channel-avtar img{
+    height: 36px;
+}
+
+/* CHANEL LOGO NAME DISCRIPTION*/
+.aboutchanal{
+    background-color: #272727;
+    border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   
+   padding-top:12px;
+}
+.chanaelIdes{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.channelname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.desaboutchanel{
+    display: flex;
+    flex-direction: column;
+    font-size:12px;
+}
+
+/*video description title */
+#description{
+display: flex;
+flex-direction: column;
+margin-top:12px;
+width:800px;
+}
+#videotitle{
+    font-weight:600;
+}
+.viewsdescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size:12px;
+}
+.desaboutchanel p{
+ height:31px;
+ margin-top:5px;
+ overflow: hidden;
+}
+.desaboutchanel h4{
+    margin:10px 0px 10px 0px;
+}
+.rightside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+.rightside span{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*COMMENTS DETAILS*/
+.commentsdetail{
+    display: flex;
+    flex-direction:row;
+    gap:30px;
+    margin-top:8px;
+    font-size: 13px;
+}
+.commentsort{
+    display: flex;
+    flex-direction:row;
+}
+.commentsort img{ 
+height: 25px;}
+.yourcomment{color:white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 0px 25px 0px;
+
+}
+.yourcomment img{
+    width:50px;
+    height: 50px;
+}
+.yourcomment input{ width:90%;
+height:30px;
+background-color: var(--background-color);
+}
+#comments{
+    width:690px;    
+    display: flex;
+    flex-direction:column;
+}
+.commentdesbox{display: flex;
+flex-direction:row;
+gap:10px;
+margin:8px;}
+.authorcomt{
+    display: flex;
+    flex-direction:column;
+}
+.authorcomt p{
+    margin:2px;
+    font-size: 13px;
+}
+.authorcomt :first-child{
+    font-size: 13px;
+    font-weight: 600;
+}
+.authorlogo img{
+    border-radius: 50%;
+}
+
+.likedis{
+    display: flex;
+    flex-direction:row;
+    gap:12px;
+    align-items: center;
+    font-size: 12px;
+    margin:8px;
+}
+.likedis img{
+    width:19px; height: 19px;
+}
